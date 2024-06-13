@@ -24,6 +24,9 @@
 #images{
     width: 300px;
 }
-h1{
+#h1{
     text-align: center;
+}
+hr{
+    border: 1px solid blue;
 }
