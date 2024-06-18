@@ -30,3 +30,7 @@
 hr{
     border: 1px solid blue;
 }
+.customDiv{
+    padding: 20px;
+    width: 100%;
+}
