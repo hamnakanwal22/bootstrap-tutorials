@@ -93,6 +93,160 @@
 <hr>
 <h1>Show Abbrevation class</h1>
 <abbr title="British Broadcasting Corporation">BBC</abbr>
+<hr>
+<h1>Bootstrap Blockquotes</h1>
+<blockquotes class="blockquote-reverse">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, soluta?</p>
+    <footer>
+        This famous code is by <cite title="Benjamin Franklin">Benjamin Franklin</cite>
+    </footer>
+</blockquotes>
+<hr>
+<h1>List</h1>
+<ul class="">
+    <li>India</li>
+    <li>Pakistan</li>
+    <li>Canada</li>
+    <li>Australia</li>
+    <li>Newzeland</li>
+
+</ul>
+<hr>
+<h1>Description</h1>
+<dl>
+    <dt>ASP.NET</dt>
+    <dd>Framework for developing web applications</dd>
+
+    <dt>jQuery</dt>
+    <dd>JavaScript library that works across a multitude of browsers</dd>
+
+    <dt>SQL</dt>
+    <dd>The standard language for relational database management systems</dd>
+</dl>
+
+<h3>Description with horizontal classxgh  </h3>
+<dl class="dl-horizontal">
+    <dt>ASP.NET</dt>
+    <dd>Framework for developing web applications</dd>
+
+    <dt>jQuery</dt>
+    <dd>JavaScript library that works across a multitude of browsers</dd>
+
+    <dt>SQL</dt>
+    <dd>The standard language for relational database management systems</dd>
+</dl>
+<hr>
+<h1>List group</h1>
+<ul class="list-group">
+    <li class="list-group-item list-group-item-danger">India</li>
+    <li class="list-group-item list-group-item-info">Pakistan</li>
+    <li class="list-group-item list-group-item-success">Canada</li>
+    <li class="list-group-item list-group-item-warning">Australia<span class="badge">New</span></li>
+    <li class="list-group-item list-group-item-danger" >Newzeland</li>
+
+</ul>
+<div class="list-group">
+    <a href="http://dell.com" class="list-group-item">Dell</a>
+    <a href="http://google.com" class="list-group-item">Google</a>
+
+    <a href="http://microsoft.com" class="list-group-item">Microsoft</a>
+</div>
+<ul class="list-group">
+    <li class="list-group-item disabled">Disabled Item</li>
+    <li class="list-group-item active">Active Item</li>
+    <li class="list-group-item">Other Item 1</li>
+    <li class="list-group-item">Other Item 2</li>
+</ul>
+<div class="list-group">
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">List Group Item 1 Heading</h4>
+        <p class="list-group-item-text">List Group Item 1 Text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, impedit quasi hic facere blanditiis inventore corrupti sint numquam tenetur deserunt?</p>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">List Group Item 2 Heading</h4>
+        <p class="list-group-item-text">List Group Item 2 Text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo eveniet maiores ad quae dolore ab.</p>
+    </a>
+    <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">List Group Item 3 Heading Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, aperiam?</h4>
+        <p class="list-group-item-text">List Group Item 3 Text</p>
+    </a>
+</div>
+<hr>
+<h1>Code Blocks</h1>
+<p>To highlight text use <code>&lt;mark&gt;</code> tag </p>
+<p>To underline text use <code>&lt;u&gt;</code> tag </p>
+
+<p>For bold text use <code>&lt;strong&gt;</code> tag </p>
+<pre>&lt;strong&gt;Bold Text&lt;/strong&gt;
+    &lt;u&gt;Underlined Text&lt;/u&gt;
+    &lt;mark&gt;Highlighted Text&lt;/mark&gt;
+    </pre>
+    <pre  class="pre-scrollable">public class Program
+        {
+            public static void Main()
+            {
+                Customer customer1 = new Customer()
+                {
+                    ID = 101,
+                    Name = "Mark",
+                    Salary = 5000
+                };
+                Customer customer2 = new Customer()
+                {
+                    ID = 102,
+                    Name = "Pam",
+                    Salary = 7000
+                };
+                Customer customer3 = new Customer()
+                {
+                    ID = 104,
+                    Name = "Rob",
+                    Salary = 5500
+                };
+                Customer[] arrayCustomers = new Customer[2];
+                arrayCustomers[0] = customer1;
+                arrayCustomers[1] = customer2;
+               
+                List<customer> listCustomers = new List<customer>(2);
+                listCustomers.Add(customer1);
+                listCustomers.Add(customer2);
+                listCustomers.Add(customer3);
+                Customer cust = listCustomers[0];
+                Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                                   cust.ID, cust.Name, cust.Salary);
+                Console.WriteLine("--------------------------------");
+               
+                for (int i = 0; i < listCustomers.Count; i++)
+                {
+                    Customer customer = listCustomers[i];
+                    Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                             customer.ID, customer.Name, customer.Salary);
+                }
+                Console.WriteLine("--------------------------------");
+               
+                foreach (Customer c in listCustomers)
+                {
+                    Console.WriteLine("ID = {0}, Name = {1}, Salary = {2}",
+                                        c.ID, c.Name, c.Salary);
+                }
+                Console.WriteLine("--------------------------------");
+               
+                
+            }
+        }</pre>
+        var <var>fullName</var> = <var>firstName</var> + <var>lastName</var>;
+        <h4>Output</h4>
+        <samp>Hello world!</samp>
+        <h4>Visual Studio</h4>
+<p>
+    Keyboard shorcut for commenting code
+    <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>C</kbd>
+</p>
+<p>
+    Keyboard shorcut for uncommenting code
+    <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>U</kbd>
+</p>
+
 </div>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
