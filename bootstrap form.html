@@ -10,9 +10,23 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <div class="container">
-        <h1>Bootstrap Forms</h1>(Vertical form)
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12">
+        <h1>Bootstrap Navbar</h1>
+        <ul class="nav  nav-tabs nav-stacked">
+            <li class="active"><a href="#">  <span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="#">  <span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+            <li><a href="#">  <span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+            
+        </ul>
+        </form>
+    </div> 
+    </div>
+
+    <div class="container">
+        <h2>Bootstrap Forms</h2>(Vertical form)
 
         <div class="row">
             <div class="col-xs-12">
@@ -175,5 +189,39 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-3">
+        <h3>Bootstrap Input group</h3>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-envelope"></span>
+    
+                        </span>
+                        <input type="text" class="form-control" placeholder="Amount">
+                        <span class="input-group-addon">.00</span>
+                    </div>
+                    <br />
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">
+                            <input type="radio" />
+                        </span>
+                        <input type="text" class="form-control" placeholder="Large">
+                    </div>
+                    <br />
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon">
+                            <input type="radio" />
+                        </span>
+                        <input type="text" class="form-control" placeholder="Small">
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>

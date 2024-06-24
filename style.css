@@ -34,3 +34,12 @@ hr{
     padding: 20px;
     width: 100%;
 }
+.breadcrumb > li + li:before { 
+    content: "|";
+ }
+ .breadcrumb {
+    background-color: #eede83;
+ }
+ .breadcrumb > .active {
+    color: #FF0000;
+ }
