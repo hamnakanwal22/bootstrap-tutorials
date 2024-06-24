@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <div class="container">
+        <h1>Bootstrap Forms</h1>(Vertical form)
+
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <form >
+                    <div class="form-group">
+                        <label for="inputUserName">Username</label>
+                        <input  class="form-control"  type="text" id="inputUserName" placeholder="Login Emai"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input  class="form-control"  type="password" id="inputPassword" placeholder="Login Password" />
+                    </div>
+                    <button type="submit" class="btn btn-default">Login</button>
+                </form>
+                <h2>Form Inline</h2>
+                <form class="form-inline">
+    <div class="form-group">
+        <label for="inputUserName">Username</label>
+        <input class="form-control" placeholder="Login Username"
+                type="text" id="inputUserName" />
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input class="form-control" placeholder="Login Password"
+                type="password" id="inputPassword" />
+    </div>
+    <button type="submit" class="btn btn-default">Login</button>
+</form>
+<form>
+    <div class="form-group">
+        <label for="inputName">Name</label>
+        <input class="form-control" type="text" id="inputName"
+                placeholder="Full Name" />
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label class="col-xs-2 control-label" for="txtStrongPassword">Income</label>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" id="txtIncome" class="form-control"
+                        placeholder="Your annual income after taxes">
+            </div>
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            <span class="help-block">Success</span>
+    </div>
+    <div class="form-group">
+        <label for="inputDOB">Date of Birth</label>
+        <input class="form-control"  type="date" id="inputDOB" />
+    </div>
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input class="form-control" type="email" id="inputEmail"
+                placeholder="Email address" />
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label class="col-xs-2 control-label" for="txtStrongPassword">Password</label>
+            <input type="password" id="txtStrongPassword" class="form-control"
+                    placeholder="Your password">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            <span class="help-block">Strong Password</span>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="col-xs-2 control-label" for="txtAge">Age</label>
+            <input type="number" id="txtAge" class="form-control"
+                    placeholder="Your Age">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            <span class="help-block">Invalid Age</span>
+    </div>
+    <div class="form-group has-warning has-feedback">
+        <label class="col-xs-2 control-label" for="txtWeakPassword">Password</label>
+            <input type="password" id="txtWeakPassword" class="form-control"
+                    placeholder="Your password">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            <span class="help-block">Weak Password</span>
+        </div>
+    <div class="form-group">
+        <label for="inputExperience">Work Experience</label>
+        <input class="form-control" disabled type="number" id="inputExperience"
+                placeholder="Total experience in years" />
+    </div>
+    <div class="form-group">
+        <label for="inputUrl">Personal Website</label>
+        <input class="form-control" type="url" id="inputUrl"
+                placeholder="Your website address" />
+    </div>
+    <div class="form-group">
+        <label for="inputDescription">Product Description</label>
+        <textarea class="form-control" id="inputDescription" rows="5"
+                    placeholder="Full Product Description"></textarea>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="option1">
+            Option 1
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="option2">
+            Option 2
+        </label>
+    </div>
+    <div class="checkbox disabled">
+        <label>
+            <input type="checkbox" value="option3" disabled>
+            Option 3
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="radioGroup" id="opt1" value="1">
+            Option 1
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="radioGroup" id="opt2" value="2">
+            Option 2
+        </label>
+    </div>
+    <div class="radio disabled">
+        <label>
+            <input type="radio" name="radioGroup" id="opt3" value="3" disabled>
+            Option 3
+        </label>
+    </div>
+    <select multiple class="form-control">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+        <option>Option 6</option>
+        <option>Option 7</option>
+        <option>Option 9</option>
+        <option>Option 9</option>
+        <option>Option 10</option>
+    </select>
+    <button type="submit" class="btn btn-default">Login</button>
+</form>
+<h2>Form height & width</h2>
+<form>
+    <div class="row">
+        <div class="form-group col-xs-3">
+            <label for="inputName">Name</label>
+            <input class="form-control  input-lg" type="text" id="inputName"
+                    placeholder="Full Name" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-xs-3">
+            <label for="inputDOB">Gender</label>
+            <select class="form-control">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
