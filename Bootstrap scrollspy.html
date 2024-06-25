@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap scrollspy</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        body {
+            position: relative;
+        }
+        .divStyle{
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#mainNavBar" data-offset="10">
+    <nav id="mainNavBar" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav ">
+                    <li class="active"><a href="#divDesert">Desert</a></li>
+                    <li><a href="#divLighthouse">Lighthouse</a></li>
+                    <li><a href="#divTulips">Tulips</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            Animals <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#divJellyfish">Jellyfish</a>
+                            </li>
+                            <li>
+                                <a href="#divPenguins">Penguins</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="divDesert" class="divStyle">
+            <h1>Desert</h1>
+            <img src="images/pexels-eberhard-grossgasteiger-1421903.jpg" class="img-responsive" />
+        </div>
+
+        <div id="divLighthouse" class="divStyle">
+            <h1>Lighthouse</h1>
+            <img src="images/pexels-katja-592077 - Copy.jpg" class="img-responsive" />
+        </div>
+
+        <div id="divTulips" class="divStyle">
+            <h1>Tulips</h1>
+            <img src="images/pexels-pixabay-66896.jpg" class="img-responsive" />
+        </div>
+
+        <div id="divJellyfish" class="divStyle">
+            <h1>Jellyfish</h1>
+            <img src="images/pexels-pixabay-531880.jpg" class="img-responsive" />
+        </div>
+
+        <div id="divPenguins" class="divStyle">
+            <h1>Penguins</h1>
+            <img src="images/pexels-pixabay-206359.jpg" class="img-responsive" />
+        </div>
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
