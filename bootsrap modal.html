@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Model</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#homeTab" data-toggle="tab">Home</a>
+                    </li>
+                    <li>
+                        <a href="#contactTab" data-toggle="tab">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                            Locations <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#indiaTab" data-toggle="tab">India</a></li>
+                            <li><a href="#usaTab" data-toggle="tab">USA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="homeTab" class="tab-pane active">
+                        <h3>Home</h3>
+                        <p>Home page content</p>
+                    </div>
+                    <div id="contactTab" class="tab-pane">
+                        <h3>Contact</h3>
+                        <p>Contact page content</p>
+                    </div>
+                    <div id="indiaTab" class="tab-pane">
+                        <h3>India</h3>
+                        <p>India Location Details</p>
+                    </div>
+                    <div id="usaTab" class="tab-pane">
+                        <h3>USA</h3>
+                        <p>USA Location Details</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary btn-sm pull-right" data-target="#loginModal" data-toggle="modal">Login</button>
+                <div class="modal fade" tabindex="-1" id="loginModal"
+        data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputUserName">Username</label>
+                        <input class="form-control" placeholder="Login Username"
+                                type="text" id="inputUserName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input class="form-control" placeholder="Login Password"
+                                type="password" id="inputPassword" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-primary"
+                        data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+        <button class="btn btn-primary" title="As a framework, Bootstrap includes the basics for responsive web development, so "
+        data-toggle="tooltip"  data-placement="right">
+    Button
+</button><br><br>
+Name : <input type="text" id="txtName" data-toggle="tooltip"
+title="Your full name" />
+<span class="glyphicon glyphicon-info-sign" id="infoIcon"></span>
+<button class="btn btn-primary" id="btnPopover" title="Popover Title"
+        data-content="Popover content. Popover content. Popover content."
+        data-toggle="popover"  data-trigger="hover">
+    Popover Example
+</button><br><br>
+<div class="alert alert-danger">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>Error!</strong> There is a problem submitting your form
+</div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        placement:'right',
+        title: 'As a framework, Bootstrap includes the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system. The Bootstrap framework is built on Hypertext Markup Language (HTML), cascading style sheets (CSS) and JavaScript.',
+        animation: true,
+        delay: { show: 500, hide: 800 },
+        html: true
+        
+    });
+});
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    $('#txtName').tooltip();
+    trigger: 'click'
+    trigger: 'manual'
+
+});
+</script>
+<script type="text/javascript">
+   $(document).ready(function () {
+    $('#btnPopover').popover();
+});
+</script>
+</body>
+</html>

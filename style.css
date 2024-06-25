@@ -43,3 +43,9 @@ hr{
  .breadcrumb > .active {
     color: #FF0000;
  }
+ .well-sm{
+    background-color: rgb(230, 247, 138);
+ }
+ .jumbotron{
+    background-color: rgb(179, 255, 230);
+ }
